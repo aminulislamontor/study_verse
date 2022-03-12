@@ -7,6 +7,8 @@
 		$password = $_REQUEST['password'];
 		$email = $_REQUEST['email'];
 		$id = $_REQUEST['id'];
+		$userType = $_REQUEST['userType'];
+		$phoneNumber = $_REQUEST['phoneNumber'];
 
 		$src = $_FILES['myfile']['tmp_name'];
 		$des = "../upload/".$_FILES['myfile']['name'];
@@ -23,7 +25,7 @@
 				$user = explode('|', $line);
 				
 				if($user[0] == $id){
-					$line = $id."|".$username."|".$password."|".$email."\r\n";
+					$line = $id."|".$username."|".$password."|".$email."|".$userType."|".$phoneNumber."\r\n";
 					//$updatedContent .= $line;
 				}
 				$updatedContent .= $line;

@@ -43,6 +43,8 @@ require('../header.php');
 				<td><?=$userArray[1]?></td>
 				<td><?=$userArray[2]?></td>
 				<td><?=$userArray[3]?></td>
+				<td><?=$userArray[4]?></td>
+				<td><?=$userArray[5]?></td>
 
 				
 				<td>

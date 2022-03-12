@@ -7,10 +7,12 @@
 		$password = $_REQUEST['password'];
 		$email = $_REQUEST['email'];
 		$id = $_REQUEST['id'];
+		$userType = $_REQUEST['userType'];
+		$phoneNumber = $_REQUEST['phoneNumber'];
 
 		if($username != null && $password != null && $email != null){
 			
-			$file = fopen('../models/user.txt', 'r');
+			$file = fopen('../../models/user.txt', 'r');
 			$updatedContent = "";
 
 			while(!feof($file)){
@@ -18,16 +20,16 @@
 				$user = explode('|', $line);
 				
 				if($user[0] == $id){
-					$line = $id."|".$username."|".$password."|".$email."\r\n";
+					$line = $id."|".$username."|".$password."|".$email."|".$userType."|".$phoneNumber."\r\n";
 					//$updatedContent .= $line;
 				}
 				$updatedContent .= $line;
 				
 			}
 
-			$file = fopen('../models/user.txt', 'w');
+			$file = fopen('../../models/user.txt', 'w');
 			fwrite($file, $updatedContent);
-			header('location: ../views/userlist.php');
+			header('location: ../../views/manager/userlist.php');
 
 		}else{
 			echo "null submission";

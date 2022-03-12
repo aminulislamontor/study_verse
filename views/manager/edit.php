@@ -43,6 +43,14 @@
 				<td><input type="email" name="email" value="<?=$userArray[3]?>"></td>
 			</tr>
 			<tr>
+				<td>User Type</td>
+				<td><input type="text" name="userType" value="<?=$userArray[4]?>"></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="text" name="phoneNumber" value="<?=$userArray[5]?>"></td>
+			</tr>
+			<tr>
 				<td></td>
 				<td><input type="submit" name="update" value="Update"></td>
 			</tr>

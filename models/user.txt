@@ -1,4 +1,4 @@
-447443636|admin|admin|admin@gmail.com|admin|121
-447443636|manager|manager|admin@gmail.com|manager|121
-447443636|teacher|teacher|admin@gmail.com|teacher|121
-447443636|student|student|admin@gmail.com|student|121
+1|admin|admin|admin@gmail.com|admin|018219191
+2|manager|manager|manager@gmail.com|manager|0121211
+3|teacher|teacher|teacher@gmail.com|teacher|9192211
+4|student|student|student@gmail.com|student|0123121111
