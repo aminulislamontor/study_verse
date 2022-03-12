@@ -9,13 +9,13 @@
 		$id = $_REQUEST['id'];
 
 		$src = $_FILES['myfile']['tmp_name'];
-		$des = "upload/".$_FILES['myfile']['name'];
+		$des = "../upload/".$_FILES['myfile']['name'];
 
 		move_uploaded_file($src, $des);
 
 		if($username != null && $password != null && $email != null){
 			
-			$file = fopen('../models/user.txt', 'r');
+			$file = fopen('../../models/user.txt', 'r');
 			$updatedContent = "";
 
 			while(!feof($file)){
@@ -30,14 +30,14 @@
 				
 			}
 
-			$file = fopen('../models/user.txt', 'w');
+			$file = fopen('../../models/user.txt', 'w');
 			fwrite($file, $updatedContent);
-			header('location: ../views/userlist.php');
+			header('location: ../../views/manager/userlist.php');
 
 		}else{
 			echo "null submission";
 		}
 	}
-	else header('location: ../views/phome.php');
+	else header('location: ../../views/manager/phome.php');
 
 ?>

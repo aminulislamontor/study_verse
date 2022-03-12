@@ -10,7 +10,7 @@
 
 		if($bookname != null && $writer != null ){
 			
-			$file = fopen('../models/booklist.txt', 'r');
+			$file = fopen('../../models/managertxt/booklist.txt', 'r');
 			$updatedContent = "";
 
 			while(!feof($file)){
@@ -25,9 +25,9 @@
 				
 			}
 
-			$file = fopen('../models/booklist.txt', 'w');
+			$file = fopen('../../models/managertxt/booklist.txt', 'w');
 			fwrite($file, $updatedContent);
-			header('location: ../views/book_list.php');
+			header('location: ../../views/manager/book_list.php');
 
 		}else{
 			echo "null submission";

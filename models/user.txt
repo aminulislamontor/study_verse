@@ -1,4 +1,4 @@
-447443636|admin|admin|admin@gmail.com|admin|121
-447443636|manager|manager|manager@gmail.com|manager|121
-447443636|teacher|teacher|teacher@gmail.com|teacher|121
-447443636|student|student|student@gmail.com|student|121
+447443636|admina|admin|admin@gmail.com
+447443636|admina|admin|admin@gmail.com
+447443636|admina|admin|admin@gmail.com
+447443636|admina|admin|admin@gmail.com

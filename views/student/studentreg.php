@@ -46,7 +46,7 @@ require('../header.php');
 
 <center>
 
-	<form  method="POST" action="../../controller/teachercheck/teacherregcheck.php">
+	<form  method="POST" action="../../controller/studentcheck/studentregcheck.php">
 		
 		<fieldset align="center"  style="width:420px"  >
 			

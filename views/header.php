@@ -4,7 +4,7 @@ session_start();
 
 if(!isset($_COOKIE['status']))
 {
-	header('location: manager/plogin.php');
+	header('location: ../login.php');
 }
 
 ?>

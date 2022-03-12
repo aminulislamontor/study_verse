@@ -24,7 +24,7 @@
 </head>
 <body>
 <right>
-	<a href="phome.php"> Back </a> |
+	
 	<a href="../../controller/managercheck/logout.php"> logout </a>
 </right>
 	<br><br>

@@ -12,7 +12,7 @@ require('../header.php');
 <body>
 
 	<a href="phome.php"> back </a> |
-	  <a href="../../controller/manager/logout.php"> logout </a>
+	  <a href="../../controller/managercheck/logout.php"> logout </a>
 <br><br>
 		
 		<table border="1">
