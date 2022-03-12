@@ -23,6 +23,16 @@
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
 					header('location: ../../views/manager/phome.php');
+				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $userType){
+					$_SESSION['status'] = true;
+					$_SESSION['current_user'] = $userArry;
+					setcookie('status', 'true', time()+3600, '/');
+					header('location: ../../views/manager/phome.php');
+				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $userType){
+					$_SESSION['status'] = true;
+					$_SESSION['current_user'] = $userArry;
+					setcookie('status', 'true', time()+3600, '/');
+					header('location: ../../views/manager/phome.php');
 				}
 			}
 

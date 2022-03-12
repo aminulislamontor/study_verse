@@ -1,1 +1,2 @@
-447443636|fahim|aa|fahim.dcc2017@gmail.com
+447443636|admin|admin|admin@gmail.com|admin|121
+447443636|mngr|mngr|manager@gmail.com|manager|121
