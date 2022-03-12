@@ -7,7 +7,6 @@
 		$password = $_REQUEST['password'];
 
 		if($username != null && $password != null){
-			//$user = $_SESSION['user'];
 
 			$file = fopen('../../models/user.txt', 'r');
 
@@ -16,19 +15,28 @@
 
 				$user = fgets($file);
 				$userArry = explode('|', $user);
+				$admintype = "admin";
+				$managerType = "manager";
+				$teacherType = "teacher";
+				$studentType = "student";
 				
 				
-				if(trim($userArry[1]) == $username && trim($userArry[2]) == $password){
+				if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $admintype){
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
 					header('location: ../../views/manager/phome.php');
-				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $userType){
+				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $managerType){
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
 					header('location: ../../views/manager/phome.php');
-				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $userType){
+				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $teacherType){
+					$_SESSION['status'] = true;
+					$_SESSION['current_user'] = $userArry;
+					setcookie('status', 'true', time()+3600, '/');
+					header('location: ../../views/manager/phome.php');
+				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $studentType){
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
