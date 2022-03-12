@@ -20,7 +20,7 @@
 		<table align="right">
 			<tr>
 				<td > 
-					<a href="phome.php"> Back </a> 
+					<a href="login.php"> Back </a> 
 	               
 				</td>
 			</tr>
@@ -35,7 +35,7 @@
 
 <center>
 
-	<form  method="POST" action="../../controller/managercheck/pregchck.php">
+	<form  method="POST" action="../controller/managercheck/pregchck.php">
 		
 		<fieldset align="center"  style="width:420px"  >
 			

@@ -26,7 +26,7 @@
 				</td>
 
 				<td>
-					<a href="../../controller/managercheck/logout.php"> logout </a>
+					<a href="../controller/managercheck/logout.php"> logout </a>
 			    </td>
 			</tr>
 		
@@ -40,7 +40,7 @@
 
 <center>
 
-	<form  method="POST" action="../../controller/managercheck/forgotpasscheck.php">
+	<form  method="POST" action="../controller/managercheck/forgotpasscheck.php">
 		
 		<fieldset align="center"  style="width:420px"  >
 			
