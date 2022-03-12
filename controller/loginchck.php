@@ -8,7 +8,7 @@
 
 		if($username != null && $password != null){
 
-			$file = fopen('../../models/user.txt', 'r');
+			$file = fopen('../models/user.txt', 'r');
 
 			
 			while(!feof($file)){
@@ -25,22 +25,22 @@
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
-					header('location: ../../views/manager/phome.php');
+					header('location: ../views/manager/phome.php');
 				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $managerType){
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
-					header('location: ../../views/manager/phome.php');
+					header('location: ../views/manager/phome.php');
 				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $teacherType){
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
-					header('location: ../../views/manager/phome.php');
+					header('location: ../views/manager/phome.php');
 				}else if(trim($userArry[1]) == $username && trim($userArry[2]) == $password && trim($userArry[4]) == $studentType){
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
-					header('location: ../../views/manager/phome.php');
+					header('location: ../views/manager/phome.php');
 				}
 			}
 

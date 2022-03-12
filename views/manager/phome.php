@@ -37,7 +37,7 @@ require('../header.php');
 		<table align="right">
 		<tr >
 				<td >
-					<a href="../../controller/managercheck/logout.php"> logout </a>
+					<a href="../../controller/logout.php"> logout </a>
 				</td>
 			</tr>
 		</table>

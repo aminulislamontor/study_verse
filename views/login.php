@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Manager_Login</title>
+	<title>Login</title>
 </head>
 <body>
 
@@ -28,10 +28,10 @@
  <br></br>
 
 	<center>
-	<form  method="POST" action="../../controller/managercheck/loginchck.php" >
+	<form  method="POST" action="../controller/loginchck.php" >
 
 		<fieldset align="center"  style="width:200px" >
-			<legend>Manager login</legend> 
+			<legend>Login</legend> 
 			<table>
 				<tr><td></td></tr>
 			</table>

@@ -1,6 +1,6 @@
 <?php
 
-header('location: views/manager/plogin.php');
+header('location: views/login.php');
 
 
 
