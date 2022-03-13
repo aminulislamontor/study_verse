@@ -10,7 +10,7 @@
 		<table >
 			<tr>
 				<td>
-					Welcome to STUDY.COM !!! 
+					Welcome to STUDY VERSE :-) 
 				</td>
 			</tr>
 		</table>

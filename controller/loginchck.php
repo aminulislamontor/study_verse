@@ -40,7 +40,7 @@
 					$_SESSION['status'] = true;
 					$_SESSION['current_user'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
-					header('location: ../views/manager/phome.php');
+					header('location: ../views/student/shome.php');
 				}
 			}
 
