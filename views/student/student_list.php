@@ -11,7 +11,7 @@ require('../header.php');
 </head>
 <body>
 
-	<a href="../../views/manager/phome.php"> back </a> |
+	<a href="../../views/admin/ahome.php"> back </a> |
 	  <a href="../../controller/managercheck/logout.php"> logout </a>
 <br><br>
 		

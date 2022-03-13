@@ -3,7 +3,7 @@
 
 	$id = $_GET['id'];
 
-	$file = fopen('../../models/managertxt/managerList.txt', 'r');
+	$file = fopen('../../models/user.txt', 'r');
 
 	while (!feof($file)) {
 		$user = fgets($file);
@@ -16,19 +16,19 @@
 
 <html>
 <head>
-	<title>Edit User</title>
+	<title>Edit Student</title>
 </head>
 <body>
 
-	<a href="userlist.php"> Back </a> |
-	<a href="../../controller/managercheck/logout.php"> logout </a>
+	<a href="managerList.php"> Back </a> |
+	<a href="../../controller/logout.php"> logout </a>
 	<br><br>
 
-	<form method="POST" action="../../controller/managercheck/editchck.php">
+	<form method="POST" action="../../controller/studentcheck/studenteditcheck.php">
 		<input type="hidden" name="id" value="<?=$id?>"/>
 		
 		<fieldset>
-			<legend>Add new User</legend>
+			<legend>Add new Student</legend>
 		<table>
 			<tr>
 				<td>Username</td>
@@ -41,14 +41,6 @@
 			<tr>
 				<td>Email</td>
 				<td><input type="email" name="email" value="<?=$userArray[3]?>"></td>
-			</tr>
-			<tr>
-				<td>User Type</td>
-				<td><input type="text" name="userType" value="<?=$userArray[4]?>"></td>
-			</tr>
-			<tr>
-				<td>Phone Number</td>
-				<td><input type="text" name="phoneNumber" value="<?=$userArray[5]?>"></td>
 			</tr>
 			<tr>
 				<td></td>

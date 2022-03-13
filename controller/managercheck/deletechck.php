@@ -10,7 +10,7 @@
 
 		if($username != null && $password != null && $email != null){
 			
-			$file = fopen('../models/user.txt', 'r');
+			$file = fopen('../../models/managertxt/managerList.txt', 'r');
 			$updatedContent = "";
 
 			while(!feof($file)){
@@ -26,15 +26,34 @@
 				
 			}
 
-			$file = fopen('../models/user.txt', 'w');
+			$file = fopen('../../models/managertxt/managerList.txt', 'w');
 			fwrite($file, $updatedContent);
-			header('location: ../views/userlist.php');
+
+			$file = fopen('../../models/user.txt', 'r');
+			$updatedContent = "";
+
+			while(!feof($file)){
+				$line = fgets($file);
+				$user = explode('|', $line);
+				
+				if($user[0] != $id){
+					
+					$updatedContent .= $line;
+
+				}
+				//$updatedContent .= $line;
+				
+			}
+
+			$file = fopen('../../models/user.txt', 'w');
+			fwrite($file, $updatedContent);
+			header('location: ../../views/manager/userlist.php');
 
 		}else{
 			echo "null submission";
 		}
 	}
 	else 
-		header('location: ../views/userlist.php');
+		header('location: ../../views/userlist.php');
 
 ?>

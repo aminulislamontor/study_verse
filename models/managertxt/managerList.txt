@@ -1,6 +1,3 @@
-317881321|admin|admin|admin@gmail.com|admin|018219191
 317231168|manager|manager|manager@gmail.com|manager|0121211
-237881268|teacher|teacher|teacher@gmail.com|teacher|9192211
-431788618|student|student|student@gmail.com|student|0123121111
 317881268|sumonaa|sumona|sumona@gmail.com|manager|112112
 94505605|ontor|ontor|ontor2013@gmail.com|manager|012121212|Male|BSc|A+

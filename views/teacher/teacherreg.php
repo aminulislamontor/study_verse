@@ -26,7 +26,7 @@ require('../header.php');
 		<table align="right">
 			<tr>
 				<td > 
-					<a href="../manager/phome.php"> Back </a>  
+					<a href="../admin/ahome.php"> Back </a>  
 				</td>
 
 				<td > 

@@ -7,13 +7,13 @@ require('../header.php');
 <html>
 
 <head>
-	<title>User list</title>
+	<title>Student list</title>
 </head>
 
 <body>
 
-	<a href="../admin/ahome.php"> back </a> |
-	<a href="../../controller/managercheck/logout.php"> logout </a>
+	<a href="../../views/admin/ahome.php"> Back </a> |
+	<a href="../../controller/logout.php"> Logout </a>
 	<br><br>
 
 	<table border="1">
@@ -22,8 +22,6 @@ require('../header.php');
 			<td>USERNAME</td>
 			<td>PASSWORD</td>
 			<td>EMAIL</td>
-			<td>User Type</td>
-			<td>Phone Number</td>
 			<td>ACTION</td>
 
 
@@ -35,23 +33,22 @@ require('../header.php');
 
 			$user = fgets($file);
 			$userArray = explode('|', $user);
+			$userType = "admin";
 
-			if ($userArray[0] != null && $userArray[1] != null && $userArray[2] != null && $userArray[3] != null) {
+			if ($userArray[0] != null && $userArray[1] != null && $userArray[2] != null && $userArray[3] != null) 
+			{
 		?>
-
-
 				<tr>
 					<td><?= $userArray[0] ?></td>
 					<td><?= $userArray[1] ?></td>
 					<td><?= $userArray[2] ?></td>
 					<td><?= $userArray[3] ?></td>
 					<td><?= $userArray[4] ?></td>
-					<td><?= $userArray[5] ?></td>
 
 
 					<td>
-						<a href="../../views/manager/edit.php?id=<?= $userArray[0] ?>"> EDIT </a> |
-						<a href="../../views/manager/delete.php?id=<?= $userArray[0] ?>"> DELETE </a>
+						<a href="../../views/manager/managerEdit.php?id=<?= $userArray[0] ?>"> EDIT </a> |
+						<a href="../../views/student/studentdelete.php?id=<?= $userArray[0] ?>"> DELETE </a>
 					</td>
 				</tr>
 		<?php

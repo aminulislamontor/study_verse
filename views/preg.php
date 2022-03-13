@@ -39,7 +39,7 @@
 		
 		<fieldset align="center"  style="width:420px"  >
 			
-			<legend>Manager Registration</legend>
+			<legend>Student Registration</legend>
 		
 		<table>
 			<tr><td></br></td></tr>
