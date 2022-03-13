@@ -117,7 +117,7 @@ require('../header.php');
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="teachers_fee.php">Set Teachers Fee</a>
+                                    <a href="../manager/teachers_fee.php">Set Teachers Fee</a>
                                 </td>
                             </tr>
                         </table>

@@ -209,7 +209,7 @@ require('../header.php');
 							<tr>
 								<td>
 
-									<a href="../teacher/teacher_feedback.php">Teacher's Feedback</a>
+									<a href="teacher_feedback.php">Teacher's Feedback</a>
 
 								</td>
 							</tr>
