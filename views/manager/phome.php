@@ -142,10 +142,6 @@ require('../header.php');
 
 								</td>
 							</tr>
-
-
-
-
 						</table>
 					</fieldset>
 
