@@ -4,3 +4,6 @@
 431788618|student|student|student@gmail.com|student|0123121111
 317881268|sumonaa|sumona|sumona@gmail.com|manager|112112
 94505605|ontor|ontor|ontor2013@gmail.com|manager|012121212|Male|BSc|A+
+2108399060|fahim|fshim|fahim.dcc2017@gmail.com|2022-03-01|Male|MSc|A+
+63346442|fahim|cxcc|fahim.dcc2017@gmail.com|2022-03-01|Male|MSc|A+
+668089358|fahim|123|fahim.dcc2017@gmail.com|2022-03-01|Male|MSc|A+

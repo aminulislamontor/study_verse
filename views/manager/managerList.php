@@ -1,6 +1,7 @@
 <?php
 
 require('../header.php');
+require('../../models/studenttxt/con.php');
 
 ?>
 
@@ -18,43 +19,51 @@ require('../header.php');
 
 	<table border="1">
 		<tr>
-			<td>ID</td>
-			<td>USERNAME</td>
-			<td>PASSWORD</td>
-			<td>EMAIL</td>
-			<td>ACTION</td>
+			 <td>ID</td>
+     		 <td>USERNAME</td>
+     		 <td>PASSWORD</td>
+      		 <td>EMAIL</td>
+     		 <td>DOB</td>
+     		 <td>GENDER</td>
+     		 <td>DEGREE</td>
+     		 <td>BLOODGROUP</td>
+     		 <td>USERTYPE</td>
+     		 <td>ACTION</td>
 
 
 		</tr>
 		<?php
-		$file = fopen('../../models/managertxt/managerList.txt', 'r');
+		$con = getConnection();
 
-		while (!feof($file)) {
+    $sql = "select * from manager_reg_table";
+    $result = $con->query($sql);
 
-			$user = fgets($file);
-			$userArray = explode('|', $user);
-			$userType = "admin";
+    if (mysqli_num_rows($result) > 0) {
+      while ($row = mysqli_fetch_assoc($result)) {
+    ?>
+        <tr>
 
-			if ($userArray[0] != null && $userArray[1] != null && $userArray[2] != null && $userArray[3] != null) 
-			{
-		?>
-				<tr>
-					<td><?= $userArray[0] ?></td>
-					<td><?= $userArray[1] ?></td>
-					<td><?= $userArray[2] ?></td>
-					<td><?= $userArray[3] ?></td>
-					<td><?= $userArray[4] ?></td>
+          <td><?= $row['id'] ?></td>
+          <td><?= $row['userName'] ?></td>
+          <td><?= $row['password'] ?></td>
+          <td><?= $row['email'] ?></td>
+          <td><?= $row['dob'] ?></td>
+          <td><?= $row['gender'] ?></td>
+          <td><?= $row['degree'] ?></td>
+          <td><?= $row['bloodgroup'] ?></td>
+          <td><?= $row['userType'] ?></td>
 
+          <td>
+            <a href="../../views/manager/manageredit.php?id=<?= $row['id'] ?>"> EDIT </a> |
+            <a href="../../views/manager/managerdelete.php?id=<?= $row['id'] ?>"> DELETE </a>
+          </td>
+        </tr>
 
-					<td>
-						<a href="../../views/manager/managerEdit.php?id=<?= $userArray[0] ?>"> EDIT </a> |
-						<a href="../../views/student/studentdelete.php?id=<?= $userArray[0] ?>"> DELETE </a>
-					</td>
-				</tr>
-		<?php
-			}
+    <?php 
 		}
-		?>
+    } 
+
+    ?>
 
 	</table>
 

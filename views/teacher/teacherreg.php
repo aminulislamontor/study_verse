@@ -55,6 +55,20 @@ require('../header.php');
 			<tr><td></br></td></tr>
 			
 			<tr>
+
+			<td> Select_User</td>  
+			<td>
+		    <select name ="select_user" >
+
+		   	<option  value="teacher">Teacher</option>
+		    
+		    </select>
+		   
+		    </td>
+			 
+			</tr>
+
+			<tr>
 				<td>Username</td>
 				<td><input type="text" name="username" value=""></td>
 			</tr>
@@ -65,6 +79,11 @@ require('../header.php');
 				<td><input type="password" name="password" value="">
 				</td>
 
+			</tr>
+
+			<tr>
+				<td>Usertype</td>
+				<td><input type="text" name="usertype" value=""></td>
 			</tr>
 
 			<tr>

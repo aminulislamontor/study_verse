@@ -4,7 +4,7 @@ require('../header.php');
 
 
 
-?>
+?> 
 
 <html>
 
@@ -21,7 +21,7 @@ require('../header.php');
 					<td>
 
 						<h1>Welcome home!!! <br>
-							<center>Manager <?php echo $_SESSION['current_user'][1] ?> </center>
+							<center>Manager <?php echo $_SESSION['current_user'] ?> </center>
 						</h1>
 
 					</td>
@@ -131,7 +131,7 @@ require('../header.php');
 							<tr>
 								<td>
 
-									<a href="../student/studentreg.php"> Add Student </a>
+									<a href="../preg.php"> Add Student </a>
 
 								</td>
 							</tr>
@@ -270,7 +270,7 @@ require('../header.php');
 				<tr>
 					<td>
 
-						<a href="userlist.php"> Manager List </a>
+						<a href="managerList.php"> Manager List </a>
 
 					</td>
 

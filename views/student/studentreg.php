@@ -1,5 +1,5 @@
 <?php
-
+//eda ajaira hudai...
 require('../header.php');
 
 ?>
@@ -54,6 +54,19 @@ require('../header.php');
 		
 		<table>
 			<tr><td></br></td></tr>
+
+			<tr>
+
+			<td> Select_User</td>  
+			<td>
+		    <select name ="select_user" >
+		   	<option  value="student">Student</option>
+		    
+		    </select>
+		   
+		    </td>
+			 
+			</tr>
 			
 			<tr>
 				<td>Username</td>

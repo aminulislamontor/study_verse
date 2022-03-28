@@ -35,7 +35,7 @@
 
 <center>
 
-	<form  method="POST" action="../controller/managercheck/pregchck.php">
+	<form  method="POST" action="../controller/studentcheck/studentregcheck.php">
 		
 		<fieldset align="center"  style="width:420px"  >
 			
@@ -44,6 +44,20 @@
 		<table>
 			<tr><td></br></td></tr>
 			
+			<tr>
+
+			<td> Select_User</td>  
+			<td>
+		    <select name ="select_user" >
+
+		   	<option  value="student">Student</option>
+		    
+		    </select>
+		   
+		    </td>
+			 
+			</tr>
+
 			<tr>
 				<td>Username</td>
 				<td><input type="text" name="username" value=""></td>
